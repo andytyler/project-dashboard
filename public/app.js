@@ -17,7 +17,7 @@ async function setUpPage() {
 function changeImage() {
 	img.setAttribute('src', images[imageNumber])
 	imageNumber++
-	if (imageNumber > image.length) {
+	if (imageNumber > images.length) {
 		imageNumber = 0
 	}
 	console.log('changeImage() called')
@@ -25,4 +25,5 @@ function changeImage() {
 
 
 setUpPage()
+changeImage()
 setInterval(changeImage, 500)
