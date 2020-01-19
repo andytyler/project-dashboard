@@ -19,7 +19,6 @@ async function setUpPage() {
 images = {
 	catchphrases: [
 	"https://www.rd.com/wp-content/uploads/2017/10/this-is-why-there-are-13-in-a-baker-s-dozen_179437478_stevemart-1024x683.jpg",
-	"/logo.png",
 	"https://media.photoblog.com/photos5/96736-1237849384-5-l.jpg",
 	"https://www.heinzmarketing.com/wp-content/uploads/2017/08/A-watched-pot-never-boils.jpg",
 	"https://www.iaexperiment.com/wp-content/uploads/2016/08/Foot-in-the-door-02.png",
