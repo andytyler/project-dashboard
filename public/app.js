@@ -27,8 +27,6 @@ images = {
 	"https://13degreez.files.wordpress.com/2012/12/rock-and-a-hard-place-resized-600.png",
 	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-I9aLHTLOMuHF9ZNd08K8wTRDNDTy969ktAx8s4deh26bCHMSA",
 	"https://cdn2.vectorstock.com/i/1000x1000/33/46/saying-raining-cats-and-dogs-cartoon-vector-16803346.jpg",
-	"https://i.imgur.com/uGjyeQT.jpg",
-	"http://idiomic.com/wp-content/uploads/2016/12/idiomic_pickle_600.jpg",
 	"https://f4.bcbits.com/img/a3782539710_10.jpg",
 	"https://keystoneelderlaw.com/wp-content/uploads/2018/03/nest-egg.jpg"
 	]
