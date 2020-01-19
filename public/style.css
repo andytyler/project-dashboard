@@ -49,21 +49,18 @@ a {
 }
 
 p {
-	display: block;
 	margin-top: auto;
 	margin-bottom: auto;
 	text-align: center;
 	font-size: 200%;
 	color: aqua;
-	margin: 0px 0px;
 }
 
 #catchphraseImage {
 	position: relative;
-	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
 	object-fit: contain;
-	z-index: 2;
+	z-index: 3;
 }
