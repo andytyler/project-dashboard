@@ -40,10 +40,8 @@ function changeImage() {
 	img.setAttribute('src', images[imageNumber])
 	imageNumber++
 	console.log('change image called')
-
-	removeRandomBoxs(startDelay)
 }
 
 
 // setUpPage()
-setTimeout(changeImage, 1000)
+setInterval(changeImage, 1000)
