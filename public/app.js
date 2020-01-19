@@ -34,7 +34,6 @@ images = {
 	]
 }
 
-
 function changeImage() {
 	img.setAttribute('src', images[imageNumber])
 	imageNumber++
