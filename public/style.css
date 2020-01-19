@@ -49,7 +49,6 @@ a {
 }
 
 p {
-	position: relative;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -58,6 +57,7 @@ p {
 	color: aqua;
 	z-index: -1;
 	margin: 0px 0px;
+
 }
 
 #displayArea {
@@ -71,4 +71,5 @@ p {
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+	object-fit: contain
 }
