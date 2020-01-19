@@ -25,4 +25,4 @@ function changeImage() {
 
 
 setUpPage()
-setInterval(changeImage, 5000)
+setInterval(changeImage, 500)
