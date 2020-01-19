@@ -49,15 +49,16 @@ a {
 }
 
 p {
+	position: absolute;
 	margin-top: auto;
 	margin-bottom: auto;
 	text-align: center;
 	font-size: 200%;
-	color: orange;
+	color: white;
 }
 
 #catchphraseImage {
-	position: relative;
+	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
