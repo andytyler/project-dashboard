@@ -13,6 +13,11 @@ phases:
 artifacts:
     type: zip
     files:
-        - *
+        - app.js
+        - dash.svg
+        - favicon.ico
+        - logo.png
+        - signin.png
+        - style.css
         - index.html
         - package.json
