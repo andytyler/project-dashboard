@@ -17,5 +17,5 @@ function XHRPost () {
 
   xhttp.open('POST', apiUrl, true)
   xhttp.setRequestHeader('Content-type', 'application/json')
-  xhttp.send('urltext')
+  xhttp.send(urltext)
 }
