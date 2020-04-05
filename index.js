@@ -21,7 +21,7 @@ async function getList () {
 
 function XHRPost () {
   var xhttp = new XMLHttpRequest()
-  var apiUrl = 'https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/add'
+  var apiUrl = 'https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/add/'
 
   xhttp.open('POST', apiUrl, true)
   xhttp.setRequestHeader('Content-type', 'application/json')
