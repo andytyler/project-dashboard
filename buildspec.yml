@@ -20,6 +20,7 @@ artifacts:
         - signin.png
         - style.css
         - index.html
+        - index.js
+        - index.css
         - package.json
-        - home.js
         - present.html
