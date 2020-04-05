@@ -9,6 +9,7 @@ var rateOfDecay = 2
 var images = []
 const url = document.getElementById('entry-text-box')
 const urltext = url.innerText
+var data = JSON.stringify({ url: urltext })
 
 function XHRPost () {
   var xhttp = new XMLHttpRequest()
