@@ -21,3 +21,5 @@ artifacts:
         - style.css
         - index.html
         - package.json
+        - home.js
+        - present.html
