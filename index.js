@@ -16,7 +16,7 @@ async function getList () {
   const json = await response.json()
   images = await json.catchphrases
   const url = document.getElementById('exit-text-box')
-  url.innerText = images
+  url.innerText = JSON.stringify(images)
 }
 
 function XHRPost () {
