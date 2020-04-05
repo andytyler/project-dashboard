@@ -14,5 +14,5 @@ artifacts:
     type: zip
     files:
         - public/*
-        - index.html
+        - public/index.html
         - package.json
