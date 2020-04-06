@@ -27,5 +27,7 @@ async function XHRPost () {
     },
     body: JSON.stringify(data)
   })
-  return response
+  const json = await response.json()
+  const url = document.getElementById('exit-text-box')
+  url.innerText = JSON.stringify(json)
 }
