@@ -22,9 +22,6 @@ async function getList () {
 async function XHRPost () {
   const response = await fetch('https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/add/', {
     method: 'POST', // or 'PUT'
-    headers: {
-      'Content-Type': 'application/json'
-    },
     body: JSON.stringify(data)
   })
   const json = await response.json()
