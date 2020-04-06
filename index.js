@@ -20,7 +20,6 @@ async function getList () {
 }
 
 async function XHRPost () {
-  const data = 'bananas'
   const response = await fetch('https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/add/', {
     method: 'POST', // or 'PUT'
     headers: {
