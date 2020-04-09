@@ -19,16 +19,12 @@ async function getList () {
   url.innerText = JSON.stringify(images)
 }
 
-async function XHRPost() {
+async function XHRPost () {
   const url = document.getElementById('entry-text-box')
-  const urltext = url.value
-  var data = JSON.stringify({ url: urltext })
-  
+  var data = JSON.stringify({ url: url.value })
+
   const response = await fetch('https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/add/', {
     method: 'POST', // or 'PUT'
     body: JSON.stringify(data)
   })
-  const json = await response.json()
-  const url = document.getElementById('exit-text-box')
-  url.innerText = JSON.stringify(json)
 }
