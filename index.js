@@ -20,11 +20,27 @@ async function getList () {
 }
 
 async function XHRPost () {
-  const url = document.getElementById('entry-text-box')
-  var data = JSON.stringify({ url: url.value })
+  // const url = document.getElementById('entry-text-box')
+  // var data = JSON.stringify({ url: url.value })
 
-  const response = await fetch('https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/add/', {
-    method: 'POST', // or 'PUT'
-    body: JSON.stringify(data)
-  })
+  // await fetch('https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/add/', {
+  //   method: 'POST', // or 'PUT'
+  //   body: JSON.stringify(data)
+  // })
+
+  var http = new XMLHttpRequest()
+  var url = 'https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/add/'
+  const box = document.getElementById('entry-text-box')
+  var data = JSON.stringify({ url: box.value })
+  http.open('POST', url, true)
+
+  // Send the proper header information along with the request
+  http.setRequestHeader('Content-type', 'application/json')
+
+  http.onreadystatechange = function () { // Call a function when the state changes.
+    if (http.readyState == 4 && http.status == 200) {
+      console.log(http.responseText)
+    }
+  }
+  http.send(data)
 }
