@@ -8,7 +8,7 @@ var images = []
 const img = document.getElementById('catchphraseImage')
 
 async function setUpPage () {
-  const response = await fetch('https://ibnibvvcs7.execute-api.eu-west-1.amazonaws.com/Prod/list/', {})
+  const response = await fetch('https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/list/', {})
   const json = await response.json()
   images = await json.catchphrases
 }
