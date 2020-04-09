@@ -8,7 +8,7 @@ var rateOfDecay = 2
 
 var images = []
 const url = document.getElementById('entry-text-box')
-const urltext = url.innerText
+const urltext = url.value
 var data = JSON.stringify({ url: urltext })
 
 async function getList () {
