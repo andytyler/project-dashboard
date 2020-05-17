@@ -2,7 +2,7 @@ var images = []
 const exitTextBox = document.getElementById('exit-text-box')
 const url = document.getElementById('entry-text-box')
 // const urltext = url.value
-var data = JSON.stringify({ url: urltext })
+// var data = JSON.stringify({ url: urltext })
 
 async function getList () {
   const response = await fetch('https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/list/', {})
@@ -34,16 +34,23 @@ async function getList () {
   })
 }
 
+// $('#submit-button').on('click', function(event) {
+//   event.preventDefault(); // To prevent following the link (optional)
+//   XHRPost()
+// });
+
 async function XHRPost () {
   var http = new XMLHttpRequest()
   var url = 'https://mhs6nqd42a.execute-api.eu-west-1.amazonaws.com/Prod/add/'
   const box = document.getElementById('entry-text-box')
   var data = JSON.stringify({ url: box.value })
+  console.log(data);
   http.open('POST', url, true)
-
+  event.preventDefault()
   // Send the proper header information along with the request
   http.setRequestHeader('Content-type', 'application/json')
   http.send(data)
+  
 
   http.onreadystatechange = function () { // Call a function when the state changes.
     if (http.readyState == 4 && http.status == 200) {

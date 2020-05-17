@@ -8,6 +8,7 @@
 	</head>
 	
 	<header>
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 		<link rel="stylesheet" href="index.css" />
 		<script type="text/javascript" src="index.js"></script>
 	</header>
@@ -16,11 +17,11 @@
 	<div class="jumbotron">
 		<form>
 			<div class="form-group">
-				<label for="exampleInputEmail1">Image URL</label>
-				<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://example.com/link-to-image-url">
-				<small id="emailHelp" class="form-text text-muted">Post in your URL above, for the image you want to add to the dashboard...</small>
+				<label for="entry-text-box">Image URL</label>
+				<input type="text" class="form-control" id="entry-text-box" aria-describedby="MoreInfoText" placeholder="https://example.com/link-to-image-url">
+				<small id="MoreInfoText" class="form-text text-muted">Post in your URL above, for the image you want to add to the dashboard...</small>
 			</div>
-			<button type="submit" class="btn btn-primary" onclick="XHRPost()">ADD</button>
+			<button id="submit-button" type="submit" class="btn btn-primary" onClick="XHRPost()">ADD</button>
 		</form>
 	</div>
 	<div class="jumbotron">
