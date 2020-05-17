@@ -9,18 +9,34 @@
 	
 	<header>
 		<link rel="stylesheet" href="index.css" />
+		<script type="text/javascript" src="index.js"></script>
 	</header>
 
 	<body>
-		<div id="entry-text">
-			<input id="entry-text-box" type="text" placeholder="add an Image URL here"/>
-			
-			<input type="submit" value="POST" onclick="XHRPost()">
-			<input type="submit" value="DELETE" onclick="XHRDelete()">
-		</div>
-		<input type="submit" value="GET" onclick="getList()">
-		<div id="display">	
-		</div>
-		<script type="text/javascript" src="index.js"></script>
+	<div class="jumbotron">
+		<form>
+			<div class="form-group">
+				<label for="exampleInputEmail1">Image URL</label>
+				<input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="https://example.com/link-to-image-url">
+				<small id="emailHelp" class="form-text text-muted">Post in your URL above, for the image you want to add to the dashboard...</small>
+			</div>
+			<button type="submit" class="btn btn-primary" onclick="XHRPost()">ADD</button>
+		</form>
+	</div>
+	<div class="jumbotron">
+		<button type="button" class="btn btn-outline-primary mb-3" onclick="getList()">Refresh</button>
+		<div>
+			<ul id="display" class="list-group">
+				<li class="list-group-item d-flex justify-content-between align-items-center">Cras justo odio</li>
+				<li class="list-group-item">Dapibus ac facilisis in</li>
+				<li class="list-group-item">Morbi leo risus</li>
+				<li class="list-group-item">Porta ac consectetur ac</li>
+				<li class="list-group-item">Vestibulum at eros</li>
+			</ul>
+		</div>	
+	</div>
+
+
+	<input type="submit" value="DELETE" onclick="XHRDelete()">
 	</body>
 </html>

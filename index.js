@@ -1,7 +1,7 @@
 var images = []
 const exitTextBox = document.getElementById('exit-text-box')
 const url = document.getElementById('entry-text-box')
-const urltext = url.value
+// const urltext = url.value
 var data = JSON.stringify({ url: urltext })
 
 async function getList () {
@@ -17,11 +17,20 @@ async function getList () {
   // id
   // ...
   images.forEach((item) => {
-    var deleteButton = document.createElement('button') // Create a <button> element
-    deleteButton.attributes.id = item.id // Insert text
-    var URLp = document.createElement('p') // Create a <button> element
-    URLp.innerHTML = item.url // Insert text
-    display.appendChild(URLp)
+    var deleteButton = document.createElement('span') // Create a <button> element
+    deleteButton.id = "item.id"
+    deleteButton.classList += "badge badge-danger badge-pill"
+    deleteButton.innerText = "Delete" // Insert text
+
+    var URLitem = document.createElement('li') // Create a <button> element
+    URLitem.classList += "list-group-item d-flex justify-content-between align-items-center"
+    URLitem.innerHTML = item // Insert text
+    
+    display.appendChild(URLitem)
+    URLitem.appendChild(deleteButton)
+
+
+    // <span class="badge badge-danger badge-pill" onclick="XHRDelete()">Delete</span>
   })
 }
 
@@ -53,11 +62,11 @@ async function XHRDelete () {
 
   // Send the proper header information along with the request
   http.setRequestHeader('Content-type', 'application/json')
+  http.send(data)
 
   http.onreadystatechange = function () { // Call a function when the state changes.
     if (http.readyState == 4 && http.status == 200) {
       console.log(http.responseText)
     }
   }
-  http.send(data)
 }
