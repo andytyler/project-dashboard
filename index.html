@@ -14,6 +14,14 @@
 	</header>
 
 	<body>
+		<!-- Image and text -->
+	<nav class="navbar navbar-light bg-light">
+		<a class="navbar-brand" href="#">
+		<img src="./favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="">
+		Dashboard
+		</a>
+		<a class="navbar-brand" href="/present.html">Present</a>
+	</nav>
 	<div class="jumbotron">
 		<form>
 			<div class="form-group">
@@ -25,7 +33,8 @@
 		</form>
 	</div>
 	<div class="jumbotron">
-		<button type="button" class="btn btn-outline-primary mb-3" onclick="getList()">Refresh</button>
+		<button type="button" class="btn btn-outline-primary mb-3 float-right" onclick="getList()">Refresh</button>
+		<h1 class="display-8">URL List</h1>
 		<div>
 			<ul id="display" class="list-group">
 				<li class="list-group-item d-flex justify-content-between align-items-center">Cras justo odio</li>
@@ -36,5 +45,8 @@
 			</ul>
 		</div>	
 	</div>
+		<div class="jumbotron" id="gallery">
+			<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" alt="..." class="img-thumbnail">
+		</div>
 	</body>
 </html>

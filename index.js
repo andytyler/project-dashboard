@@ -12,6 +12,8 @@ async function getList () {
   
   const display = document.getElementById('display')
   display.innerHTML = ''
+  const gallery = document.getElementById('gallery')
+  gallery.innerHTML = ''
   
   images.forEach((item) => {
     var deleteButton = document.createElement('button') // Create a <button> element
@@ -19,14 +21,23 @@ async function getList () {
     deleteButton.onclick = XHRDelete
     deleteButton.classList += "badge badge-danger badge-pill"
     deleteButton.innerText = "Delete" // Insert text
-
+    
     var URLitem = document.createElement('li') // Create a <button> element
     URLitem.classList += "list-group-item d-flex justify-content-between align-items-center"
     URLitem.innerHTML = item.url // Insert text
     
+    var thumb = document.createElement('img') // Create a <img> element
+    thumb.src = item.url
+    thumb.classList += "img-thumbnail"
+    thumb.style.height = "200px"
+
     display.appendChild(URLitem)
     URLitem.appendChild(deleteButton)
+    
+    gallery.appendChild(thumb)
 
+    // gallery
+    // <img src="..." alt="..." class="img-thumbnail">
 
     // <span class="badge badge-danger badge-pill" onclick="XHRDelete()">Delete</span>
   })
